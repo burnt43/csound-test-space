@@ -14,7 +14,8 @@
 
       kEnv madsr 0.1, 0.4, 0.5, 0.6
       aOut vco2 iAmp, iFreq
-           out aOut*kEnv
+      aLp  moogladder aOut, 5000*kEnv, 0.4
+           out aLp*kEnv
     endin  
   </CsInstruments>
   <CsScore>
