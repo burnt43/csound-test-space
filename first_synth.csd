@@ -12,14 +12,15 @@
       iFreq = p4
       iAmp  = p5
 
+      kEnv madsr 0.5, 0.1, 0.5, 0.3
       aOut vco2 iAmp, iFreq
-           out aOut
+           out aOut*kEnv
     endin  
   </CsInstruments>
   <CsScore>
     i 1 0 1 220 1.0
     i 1 0 1 440 1.0
-    i 1 1 1 220 0.5
-    i 1 1 1 440 0.5
+    i 1 2 1 220 0.5
+    i 1 2 1 440 0.5
   </CsScore>
 </CsoundSynthesizer>
