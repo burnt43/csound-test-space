@@ -12,7 +12,7 @@
       iFreq = p4
       iAmp  = p5
 
-      kEnv madsr 0.5, 0.1, 0.5, 0.3
+      kEnv madsr 0.1, 0.4, 0.5, 0.6
       aOut vco2 iAmp, iFreq
            out aOut*kEnv
     endin  
